@@ -25,9 +25,9 @@ public class BrowserView extends AppCompatActivity {
         setContentView(R.layout.activity_browser_view);
 
         final WebView webView = findViewById(R.id.webView);
-        final EditText urlET = findViewById(R.id.urlET);
+        //final EditText urlET = findViewById(R.id.urlET);
 
-        final ImageView homeBtn = findViewById(R.id.homeIcon);
+       // final ImageView homeBtn = findViewById(R.id.homeIcon);
 
         url = getIntent().getStringExtra("url");
 
@@ -39,7 +39,7 @@ public class BrowserView extends AppCompatActivity {
         }
 
 
-        urlET.setText(url);
+       // urlET.setText(url);
 
 
 
@@ -47,7 +47,7 @@ public class BrowserView extends AppCompatActivity {
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 super.onPageStarted(view, url, favicon);
-                urlET.setText(url);
+               // urlET.setText(url);
             }
 
             @Override
@@ -56,7 +56,7 @@ public class BrowserView extends AppCompatActivity {
             }
         });
 
-        urlET.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+  /*      urlET.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
 
@@ -80,17 +80,17 @@ public class BrowserView extends AppCompatActivity {
                 return false;
             }
         });
+*/
 
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl(url);
 
-        homeBtn.setOnClickListener(new View.OnClickListener() {
+      /*  homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 finish();
             }
-        });
-
+        });*/
     }
 }

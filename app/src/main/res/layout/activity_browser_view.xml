@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".BrowserView">
 
-    <RelativeLayout
+  <!--  <RelativeLayout
         android:background="#FFFF"
         android:paddingTop="5dp"
         android:paddingBottom="10dp"
@@ -34,11 +34,11 @@
             android:layout_marginStart="20dp"
             android:layout_toEndOf="@+id/homeIcon"
             android:background="@drawable/round_back_brown_100_2"
-            android:maxLines="1"
             android:inputType="text"
+            android:maxLines="1"
             android:paddingStart="20dp"
             android:paddingEnd="20dp" />
-    </RelativeLayout>
+    </RelativeLayout>-->
 
     <WebView
         android:id="@+id/webView"
